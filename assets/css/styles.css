@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+li>a{
+    font-size: 20px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero_content{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        
+}
+
+.content{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.content>p{
+    font-size: 24px;
+}
+
+.content>h6>a{
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+}
+
+
+.line {
+    height: 5px;
+    background: black;
+}
+
+.now{
+    position: relative;
+}
+
+.now::after{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background:rgb(88, 88, 88);
+    position: absolute;
+    top: 5px;
+    left: 72px;
+}
+
+main{
+    padding: 20px;
+}
+
+.shop{
+    position: relative;
+}
+
+.shop_now{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding-left: 20px;
+}
+@media only screen and (max-width: 567px) {
+    header {
+            padding: 25px;
+    
+        }
+
+                 .hero_content {
+                     background-color: white;
+                     padding: 20px 20px;
+                 }
+        .content{
+            text-align: center;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+            padding: 25px;
+        }
+    .links{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        width: 100vw;
+        height: 100vh;
+        padding: 25px;
+
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    .icons {
+        gap: 12px;
+    }
+
+    .hero_content {
+        background-color: white;
+        padding: 40px 50px;
+    }
+
+    .content {
+        gap: 12px;
+    }
+
+       
+}
+
+
+
+@media only screen and (max-width: 1600px) {
+    header {
+            width: 100vw;
+            height: 100vh;
+            padding: 25px;
+    
+        }
+
+                .links {
+                    gap: 20px;
+                }
+        
+                .icons {
+                    gap: 12px;
+                }
+        
+                .hero_content {
+                    background-color: white;
+                    padding: 40px 50px;
+                }
+        
+                .content {
+                    gap: 12px;
+                }
+
+                .wraper_shop_now{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px;
+                }
+}
