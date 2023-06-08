@@ -153,10 +153,7 @@ section > h2 {
   color: white;
 }
 
-section > h2 {
-  text-align: center;
-  margin: 30px;
-}
+
 
 .recent_news{
   display: grid;
